@@ -37,6 +37,26 @@ let tl = gsap.timeline({ defaults: {ease: "power4.inOut", duration: 2}})
 tl.to('.banner-infotext', {y: 0, clipPath: "polygon(100% 100%, 0% 100%, 0% 0%, 100% 0%)", opacity: 1})
 .to('.banner-infocta', {y: 0, clipPath: "polygon(100% 100%, 0% 100%, 0% 0%, 100% 0%)", opacity: 1}, "-=1.6")
 .to('.banner-stats li', {y: 0, clipPath: "polygon(100% 100%, 0% 100%, 0% 0%, 100% 0%)", opacity: 1, stagger: .2}, "-=1.8")
+.from('.stat-figure-1', {
+  textContent: 0,
+  duration: 2,
+  snap: { textContent: 43 },
+}, "-=1.8")
+.from('.stat-figure-2', {
+  textContent: 0,
+  duration: 2,
+  snap: { textContent: 28},
+}, "-=1.8")
+.from('.stat-figure-3', {
+  textContent: 0,
+  duration: 2,
+  snap: { textContent: 3 },
+}, "-=1.8")
+.from('.stat-figure-4', {
+  textContent: 0,
+  duration: 2,
+  snap: { textContent: .1 },
+}, "-=1.8")
 
 
 // animating the showcase section
